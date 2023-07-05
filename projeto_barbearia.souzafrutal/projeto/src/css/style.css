@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    height: 300vh;
+    background-color:  #141414;
+}
+
+.menu{
+    max-width: 1280px;
+    margin: auto;
+}
+
+.topo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topo nav a:hover{
+    text-decoration: underline #27aedf 4px;
+}
+
+header{
+    width: 100%;
+    padding: 40px 4%;
+    position: fixed;
+    z-index: 9990;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+header.rolagem{
+    background-color: #5c5c5c;
+    padding: 10px 4%;
+}
+
+header.rolagem a{
+    color: #fff;
+}
+
+header .logo{
+    width: 80px;
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn_saibaMais {
+	background-color: #0061a7;
+	border-radius:10px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:15px;
+	padding:16px 34px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5b6178;
+}
+.btn_saibaMais:hover {
+	background-color:#27aedf;
+}
+.btn_saibaMais:active {
+	position:relative;
+	top:1px;
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    background-color: #000000;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0,
+    #000000 90px ), repeating-linear-gradient( #1f1f1f55, #1f1f1f );
+}
+
+.banner h1{
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+
+.banner h1 span{
+    color: #0061a7;
+}
+
+.thadeu{
+    width: 40%;
+    padding-top: 6rem;
+}
+
+.conteudo{
+    text-align: center;
+}
+
+.conteudo h5{
+    font-size: 24px;
+    color: #27aedf;
+}
+
+.corpo{
+    padding-top: 8rem;
+    font-size: 32px;
+    color: white;
+    min-width: 100vh;
+}
+
+.container-slider{
+    display: flex;
+    width: 100%;
+    min-height: 70vh;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.container-images{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+}
+
+.slider{
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.on{
+    opacity: 1;
+}
+
+#prev-btn, #next-btn{
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#prev-btn img, #next-btn img{
+    width: 100%;
+    height: 100%;
+}
+
+#prev-btn{
+    transform: rotate(180deg);
+}
+
+.img-curso{
+    border-radius: 10px;
+    width: 480px;
+    gap: 50px 0px;
+}
