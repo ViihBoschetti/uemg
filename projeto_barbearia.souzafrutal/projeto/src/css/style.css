@@ -116,13 +116,10 @@ header ul li a{
     padding-top: 6rem;
 }
 
+
+
 .conteudo{
     text-align: center;
-}
-
-.conteudo h5{
-    font-size: 24px;
-    color: #27aedf;
 }
 
 .corpo{
@@ -130,6 +127,16 @@ header ul li a{
     font-size: 32px;
     color: white;
     min-width: 100vh;
+}
+
+.corpo h1{
+    padding-bottom: 4px;
+}
+
+.corpo h5{
+    padding-bottom: 2px;
+    font-size: 24px;
+    color: #27aedf;
 }
 
 .container-slider{
@@ -179,7 +186,12 @@ header ul li a{
 }
 
 .img-curso{
-    border-radius: 10px;
-    width: 480px;
-    gap: 50px 0px;
+    width: 460px;
+    display: flex;
+    justify-content: left;
+    padding: 30px;
+}
+
+.txt-curso{
+    display: inline-block;
 }
