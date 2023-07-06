@@ -9,7 +9,7 @@
 
 html{
     scroll-behavior: smooth;
-    height: 300vh;
+    height: 450vh;
     background-color:  #141414;
 }
 
@@ -185,13 +185,55 @@ header ul li a{
     transform: rotate(180deg);
 }
 
-.img-curso{
-    width: 460px;
+.container-curso, .container-sobre{
     display: flex;
-    justify-content: left;
+    align-items: center;
+    justify-content: center;
     padding: 30px;
 }
 
+.img-curso{
+    border-radius: 10px;
+}
+
 .txt-curso{
-    display: inline-block;
+    padding-left: 50px;
+}
+
+.img-sobre{
+    border-radius: 10px;
+}
+
+.txt-sobre{
+    padding-right: 50px;
+}
+
+
+.container-saibaMais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.img-agende{
+    width: 450px;
+}
+
+.social{
+    margin: 2rem;
+    color: #fff;
+}
+
+.icon:hover{
+    transform: scale(1.2);
+}
+
+footer{
+    height: 80px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5c5c5c;
 }

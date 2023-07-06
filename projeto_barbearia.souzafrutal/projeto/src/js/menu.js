@@ -1,6 +1,6 @@
 window.addEventListener("scroll", function(){
     let header = document.querySelector('#header')
-    header.classList.toggle('rolagem', window.scrollY > 580)
+    header.classList.toggle('rolagem', window.scrollY > 750)
 })
 
 const slider = document.querySelectorAll('.slider')
