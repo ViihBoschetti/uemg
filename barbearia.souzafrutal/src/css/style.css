@@ -9,7 +9,6 @@
 
 html{
     scroll-behavior: smooth;
-    height: 450vh;
     background-color:  #141414;
 }
 
@@ -86,7 +85,8 @@ header ul li a{
 
 .banner{
     width: 100%;
-    height: 100%;
+    height: auto;
+    min-height: 300px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -95,7 +95,6 @@ header ul li a{
     align-items: center;
     justify-content: center;
     
-
     background-color: #000000;
     background-image:  repeating-radial-gradient( circle at 0 0, transparent 0,
     #000000 90px ), repeating-linear-gradient( #1f1f1f55, #1f1f1f );
@@ -105,6 +104,7 @@ header ul li a{
     font-size: 60px;
     color: white;
     text-align: center;
+    padding: 0 20px;
 }
 
 .banner h1 span{
@@ -237,3 +237,52 @@ footer{
     justify-content: center;
     background-color: #5c5c5c;
 }
+
+
+@media screen and (max-width: 767px) {
+
+    .header{
+        padding: 20px 2%;
+    }
+  
+    .banner h1 {
+      font-size: 24px;
+    }
+  
+    .thadeu {
+      padding-top: 4rem;
+    }
+  
+    .corpo h1 {
+      font-size: 24px;
+    }
+  
+    .corpo h5 {
+      font-size: 16px;
+    }
+  
+    .container-slider {
+      flex-direction: column;
+      align-items: stretch;
+      padding: 0;
+    }
+  
+    .container-images {
+      width: 100%;
+      overflow: visible;
+    }
+  
+    .slider {
+      max-width: none;
+      width: 100%;
+      height: auto;
+      margin: 10px 0;
+      position: relative;
+    }
+  
+    #prev-btn,
+    #next-btn {
+      width: 30px;
+      height: 30px;
+    }
+  }
