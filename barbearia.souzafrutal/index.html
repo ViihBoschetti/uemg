@@ -1,118 +1,147 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="./src/imgs/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="stylesheet" href="./src/css/scroll.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/scroll.css">
 
     <title>Barbearia Souza</title>
     
 </head>
+
 <body>
-
-    <header id="header">
-        <div class="menu">
-            
-            <div class="topo">
-
-                <img src="./src/imgs/logo.png" alt="logo" class="logo">
-                
-                <nav>
-                    <ul>
-                        <li><a href="#home">HOME</a></li>
-                        <li><a href="#servicos">SERVIÇOS</a></li>
-                        <li><a href="#cursos">CURSOS</a></li>
-                        <li><a href="#sobre">SOBRE</a></li>
-                    </ul>
-                </nav>
-
-                <div>
-                    <a href="#saibaMais" class="btn_saibaMais">SAIBA MAIS</a>
-                </div>
-
+    <header id="inicio">
+        <nav class="nav-bar">
+            <div>
+                <img class="logo" src="./assets/img/logo.png" alt="logo">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#inicio" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li class="nav-item"><a href="#cursos" class="nav-link">Cursos</a></li>
+                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="contato-button">
+                <button><a href="#contatos">Contatos</a></button>
             </div>
 
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                    <li class="nav-item"><a href="#inicio" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li class="nav-item"><a href="#cursos" class="nav-link">Cursos</a></li>
+                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+            </ul>
+
+            <div class="contato-button">
+                <button><a href="#contatos">Contatos</a></button>
+            </div>
         </div>
     </header>
 
     <section class="banner">
-        <h1>THADEU SOUZA<br><span>BARBEARIA SOUZA</span></br></h1>
-        <img id="home" src="./src/imgs/thadeu_banner.png" alt="Thadeu" class="thadeu">
+        <h1>THADEU SOUZA<br><span>Mais que Estética, um Lazer!</span></br></h1>
+        <img src="./assets/img/thadeu_banner.png" alt="Thadeu" class="thadeu">
     </section>
 
-    <main class="conteudo">
-
-        <section id="servicos" class="corpo">
+    <main>
+        <section id="servicos" class="main-sections">
             <h1>SERVIÇOS</h1>
-            <h5>Acompanhe meus trabalhos!</h5>
+            <h5>Acompanhe os meus trabalhos!</h5>
 
             <div class="container-slider">
-
-                <button id="prev-btn"><img src="./src/imgs/arrow.png" alt="prev-btn"></button>
-
-                <div class="container-images">
-                    <img src="./src/imgs/trabalho1.jpg" alt="trabalho1" class="slider on">
-                    <img src="./src/imgs/trabalho2.jpg" alt="trabalho2" class="slider">
-                    <img src="./src/imgs/trabalho3.jpg" alt="trabalho3" class="slider">
-                    <img src="./src/imgs/trabalho4.jpg" alt="trabalho4" class="slider">
-                    <img src="./src/imgs/trabalho5.jpg" alt="trabalho5" class="slider">
-                    <img src="./src/imgs/trabalho6.jpg" alt="trabalho6" class="slider">
+                <button id="prev-btn"><img src="./assets/img/arrow.png" alt="prev-btn"></button>
+                <div class="container-images-slider">
+                    <img src="./assets/img/trabalho1.jpg" alt="trabalho1" class="slider on">
+                    <img src="./assets/img/trabalho2.jpg" alt="trabalho2" class="slider">
+                    <img src="./assets/img/trabalho3.jpg" alt="trabalho3" class="slider">
+                    <img src="./assets/img/trabalho4.jpg" alt="trabalho4" class="slider">
+                    <img src="./assets/img/trabalho5.jpg" alt="trabalho5" class="slider">
+                    <img src="./assets/img/trabalho6.jpg" alt="trabalho6" class="slider">
                 </div>
-
-                <button id="next-btn"><img src="./src/imgs/arrow.png" alt="next-btn"></button>
-
+                <button id="next-btn"><img src="./assets/img/arrow.png" alt="next-btn"></button>
             </div>
-
         </section>
 
-        <section id="cursos" class="corpo">
+        <section id="cursos" class="main-sections">
             <h1>CURSOS</h1>
             <h5>Venha aprender comigo</h5>
-
             <div class="container-curso">
-                <img class="img-curso" src="./src/imgs/cursos.jpg" alt="curso">
-                <p class="txt-curso">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium reprehenderit quasi illum quam explicabo pariatur expedita iusto et commodi assumenda numquam eligendi, iste esse fugiat saepe incidunt recusandae maiores impedit.</p>
+                <img src="./assets/img/cursos.JPG" alt="cursos">
+                <p>É com grande profissionalismo e satisfação que ofereço um curso completo de barbearia, com aprendizado prático de cortes de cabelo masculino e barba, fornecendo orientação personalizada e dicas especializadas. Para obter mais informações sobre o curso, entre em contato pelos meios de comunicação disponíveis ao final desta página.</p>
             </div>
-
         </section>
 
-        <section id="sobre" class="corpo">
+        <section id="sobre" class="main-sections">
             <h1>SOBRE</h1>
-            <h5>Me chamo Thadeu Souza</h5>
+            <h5>Veja um pouco da minha história, me chamo Thadeu Gomes Souza</h5>
 
             <div class="container-sobre">
-                <p class="txt-sobre">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta dolores illo impedit mollitia corrupti ullam eligendi ipsum, aliquid, odio, at illum quasi minima beatae eos doloribus. Nam voluptate porro iste. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel alias temporibus veniam atque quas, eveniet facere pariatur cumque officia. Magni quae sunt culpa aperiam porro laboriosam, beatae quaerat quia animi.</p>
-                <img class="img-sobre" src="./src/imgs/sobre.jpg" alt="sobre">
+                <p>Sou graduado em Administração, casado e pai da Alice. Vindo de uma família tradicional de barbeiros, meus tios são Asis, Armando e Pedro. Foi o tio Asis que ensinou meu pai, Sinomar, a cortar cabelo. Comecei atuar na profissão aos 15 anos, inicialmente atendendo na barbearia do meu pai. Após alguns meses, decidi abrir minha própria barbearia para atrair meus próprios clientes. No entanto, fiz isso com a promessa de que um dia voltaria a trabalhar com meu pai, três anos se passaram, retornei, e estamos trabalhando juntos até hoje!</p>
+                <img src="./assets/img/sobre.jpg" alt="sobre">
             </div>
-
         </section>
 
-        <section id="saibaMais" class="corpo">
-            <h1>SAIBA MAIS</h1>
-            <h5>Todos os meus contatos</h5>
+        <section id="contatos" class="main-sections">
+            <h1>MARQUE SEU HORÁRIO</h1>
+            <h5>Temos uma agenda online</h5>
 
-            <div class="container-saibaMais">
-
-                <a class="social img-agende" href="https://agendeonline.salonsoft.com.br/60943"><img src="./src/imgs/agende.png" alt="agenda"></a>
-
-                <a class="social icon" href="https://www.instagram.com/barbearia.souzafrutal/"><img src="./src/imgs/instagram.png" alt="instagram"></a>
-
-                <a class="social icon" href="https://wa.me/34996640888"><img src="./src/imgs/whatsapp.png" alt="whatsapp"></a>
-
-                <a class="social icon" href="mailto:thadeu.adm@hotmail.com"><img src="./src/imgs/email.png" alt="email"></a>
-
+            <div class="container-agende">
+                <a href="https://agendeonline.salonsoft.com.br/60943"><img src="./assets/img/schedule.png" alt="agenda"></a>
             </div>
-
         </section>
 
     </main>
 
-    <footer>Copyright © 2023 de Barbearia Souza</footer>
+    <div class="back-home">
+        <a href="#inicio"><i class="fa-solid fa-angle-up"></i></a>
+    </div>
 
-    <script src="./src/js/menu.js" defer></script>
+    <footer>
+        <div id="footer_content">
+
+            <div id="footer_contacts">
+                <h1>Barbearia Souza</h1>
+
+                <div id="footer_social_media">
+                    <a href="https://www.instagram.com/barbearia.souzafrutal/" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://wa.me/553496640888" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="mailto:thadeu.adm@hotmail.com" class="footer-link" id="email">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2023 Todos os direitos reservados | por Victoria Boschetti Manhães
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js" defer></script>
 </body>
+
 </html>
